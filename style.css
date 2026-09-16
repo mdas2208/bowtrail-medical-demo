@@ -16,3 +16,82 @@ footer{background:#082f35;color:#d6e6e5;padding:55px 0 20px}.footer-grid{display
 @media(max-width:1100px){.nav{gap:13px;font-size:12px}.nav-cta{padding:11px 13px}.hero-grid{gap:50px}.service-grid{grid-template-columns:repeat(2,1fr)}.doctor-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:800px){.container{width:min(100% - 28px,650px)}.topbar-inner{justify-content:center}.topbar-right{display:none}.nav-wrap{height:70px}.menu-toggle{display:block}.nav{display:none;position:absolute;left:14px;right:14px;top:70px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:2px}.nav.open{display:flex}.nav a{padding:10px}.nav a:not(.nav-cta):after{display:none}.nav-cta{text-align:center}.hero{min-height:auto}.hero-bg{background:linear-gradient(180deg,rgba(238,248,247,.94),rgba(238,248,247,.96)),url("assets/bow trail clinic image 1.webp") center/cover}.hero-grid{grid-template-columns:1fr;padding:65px 0 100px}.hero-copy{max-width:none}.hero h1{font-size:clamp(43px,12vw,60px)}.hero-card{max-width:none;justify-self:stretch}.hero-bottom-note .container{gap:15px;flex-wrap:wrap}.quick-grid{grid-template-columns:repeat(2,1fr)}.quick-grid a{border-bottom:1px solid var(--line)}.section{padding:78px 0}.section-head{display:block}.section-head>p{margin-top:16px}.editorial-grid,.split,.women-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.editorial-image{min-height:390px}.editorial-copy{padding:60px 0}.split{gap:45px}.split-reverse .image-frame{order:-1}.image-frame{height:340px}.women-section{padding:78px 0}.women-photo{height:380px}.doctor-grid{grid-template-columns:repeat(2,1fr)}.new-grid{display:block}.new-grid .btn{margin-top:26px}.about-photo{height:380px}.about-badge{right:10px}.cta-photo{height:480px}.cta-inner{display:block;padding-top:90px}.cta-inner .btn{margin-top:25px}.contact-items{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}.footer-bottom{display:block}.footer-bottom span{display:block;margin:7px 0}}
 @media(max-width:480px){.container{width:calc(100% - 28px)}.brand img{width:145px}.hero-actions .btn{width:100%}.trust-row{display:block}.trust-row span{display:block;margin:8px 0}.quick-grid{grid-template-columns:1fr}.quick-grid a:first-child{border-left:0}.service-grid,.doctor-grid{grid-template-columns:1fr}.doctor-photo{height:330px}.new-patients h2{font-size:34px}.stats{gap:20px;flex-wrap:wrap}.footer-grid{grid-template-columns:1fr}.cta-photo{height:520px}.cta-inner{padding-top:80px}.hero-bottom-note{display:none}}
+
+/* ===== Presentation polish v3 ===== */
+.hero-bg{
+  background:
+    linear-gradient(90deg,rgba(238,248,247,.985) 0%,rgba(238,248,247,.96) 34%,rgba(238,248,247,.78) 57%,rgba(238,248,247,.30) 82%,rgba(238,248,247,.10) 100%),
+    url("assets/bow trail clinic image 1.webp") right center/cover no-repeat;
+}
+.hero-glow{opacity:.72}
+.doctor-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:18px;
+  align-items:stretch;
+}
+.doctor-card{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+}
+.doctor-photo{
+  height:220px;
+  background:#edf5f4;
+}
+.doctor-photo img{
+  object-fit:cover;
+  object-position:center;
+}
+.doctor-body{
+  min-height:126px;
+  display:flex;
+  flex-direction:column;
+}
+.doctor-body h3{
+  line-height:1.2;
+  min-height:43px;
+}
+.doctor-body p{
+  line-height:1.45;
+  min-height:32px;
+}
+.doctor-body a{margin-top:auto}
+.team-note{
+  margin:16px auto 0;
+  max-width:760px;
+  text-align:center;
+  color:#819194;
+  font-size:10px;
+  line-height:1.5;
+}
+.footer-brand{min-width:0}
+.footer-logo-card{
+  width:190px;
+  height:88px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#fff;
+  border-radius:10px;
+  padding:10px 14px;
+  margin-bottom:15px;
+}
+.footer-logo-card img{
+  width:165px;
+  height:auto;
+  display:block;
+}
+.footer-brand p{margin:0}
+.contact-card small{max-width:310px}
+@media(max-width:1100px){
+  .doctor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:800px){
+  .doctor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .doctor-photo{height:230px}
+}
+@media(max-width:480px){
+  .doctor-grid{grid-template-columns:1fr}
+  .doctor-photo{height:300px}
+  .footer-logo-card{width:180px}
+}
