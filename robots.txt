@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-GITHUB-USERNAME.github.io/bowtrail-medical-demo/sitemap.xml
+Sitemap: https://mdas2208.github.io/bowtrail-medical-demo/sitemap.xml
