@@ -1,0 +1,5 @@
+const toggle=document.querySelector(".menu-toggle"), nav=document.querySelector(".nav");
+toggle?.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",open)});
+document.querySelectorAll(".nav a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+const header=document.getElementById("site-header");
+window.addEventListener("scroll",()=>header.classList.toggle("scrolled",window.scrollY>20));
